@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="edu.fgcu.habithero.ui.login.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_login_to_list"
+            app:destination="@id/habitListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/habitListFragment"
+        android:name="edu.fgcu.habithero.ui.list.HabitListFragment"
+        android:label="Your Habits">
+        <action
+            android:id="@+id/action_list_to_add"
+            app:destination="@id/addHabitFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addHabitFragment"
+        android:name="edu.fgcu.habithero.ui.add.AddHabitFragment"
+        android:label="Add Habit">
+        <action
+            android:id="@+id/action_add_to_list"
+            app:destination="@id/habitListFragment"
+            app:popUpTo="@id/habitListFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+
+</navigation>

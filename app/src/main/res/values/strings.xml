@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HabitHero</string>
+    <string name="label_name">Name</string>
+    <string name="continue_">Continue</string>
+    <string name="label_title">Title</string>
+    <string name="label_note">Note (optional)</string>
+    <string name="label_frequency">Frequency</string>
+    <string name="save">Save</string>
+    <string name="done">Check Today</string>
+    <string name="no_habits">Tap + to add a habit.</string>
+    <string name="error_required">Required</string>
+    <string name="snack_today_not_allowed">This habit is not scheduled today.</string>
+    <string name="snack_saved">Habit saved</string>
+    <string name="snack_completed">Great job!</string>
+    <string-array name="frequency_options">
+        <item>Daily</item>
+        <item>Weekdays</item>
+        <item>Weekends</item>
+    </string-array>
+</resources>
